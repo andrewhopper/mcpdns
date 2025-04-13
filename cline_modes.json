@@ -1,0 +1,26 @@
+{
+  "projectName": "mcpdns",
+  "architecture": [
+    "MVC"
+  ],
+  "designPatterns": [
+    "Dependency Injection"
+  ],
+  "securityLevel": "Medium",
+  "securityFeatures": [],
+  "performance": {
+    "scalability": "Medium (1000-10000 users)",
+    "responseTime": "200ms"
+  },
+  "environments": [
+    "Development",
+    "Staging",
+    "Production"
+  ],
+  "environmentDetails": "Local MCP",
+  "guidelines": [
+    "Reference file IDs in documentation and code comments",
+    "Check folder-locks.md before modifying locked directories",
+    "Follow project conventions from .ai/1-context/project_conventions.md"
+  ]
+}
