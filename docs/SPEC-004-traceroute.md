@@ -1,10 +1,10 @@
-# SPEC-dns-mcp-traceroute-001: Network Traceroute Tool Specification
+# SPEC-004-traceroute: Network Traceroute Tool Specification
 
-## SPEC-dns-mcp-traceroute-001:overview-001
+## SPEC-004-traceroute:overview-001
 
 The Network Traceroute tool provides functionality to trace the route that packets take to reach a network host, showing the series of hops (routers/gateways) along the path. This specification outlines the implementation details, options, and usage of the traceroute feature within the MCPDNS Network Tools suite.
 
-## SPEC-dns-mcp-traceroute-001:requirements-001
+## SPEC-004-traceroute:requirements-001
 
 ### Functional Requirements
 
@@ -23,7 +23,7 @@ The Network Traceroute tool provides functionality to trace the route that packe
 4. Must validate input parameters
 5. Should provide output similar to standard traceroute utilities
 
-## SPEC-dns-mcp-traceroute-001:interface-001
+## SPEC-004-traceroute:interface-001
 
 ### Type Definitions
 
@@ -42,7 +42,7 @@ export interface TracerouteOptions {
 traceroute(host: string, options?: TracerouteOptions): Promise<string>;
 ```
 
-## SPEC-dns-mcp-traceroute-001:behavior-001
+## SPEC-004-traceroute:behavior-001
 
 ### Input Validation
 
@@ -71,7 +71,7 @@ traceroute(host: string, options?: TracerouteOptions): Promise<string>;
 - Permission errors (e.g., when raw sockets require elevated privileges) should be handled
 - Unreachable hops should be indicated with appropriate markers (e.g., * * *)
 
-## SPEC-dns-mcp-traceroute-001:examples-001
+## SPEC-004-traceroute:examples-001
 
 ### Basic Usage
 
@@ -99,7 +99,7 @@ const result = await networkTools.traceroute('192.168.1.1', {
 });
 ```
 
-## SPEC-dns-mcp-traceroute-001:implementation-notes-001
+## SPEC-004-traceroute:implementation-notes-001
 
 - The implementation should use platform-appropriate methods to send probe packets
 - For cross-platform compatibility, consider using a traceroute library that works across different operating systems
@@ -116,7 +116,7 @@ const result = await networkTools.traceroute('192.168.1.1', {
 - Ensure proper error handling for various network conditions
 - Consider implementing a progress callback for long-running traceroute operations
 
-## SPEC-dns-mcp-traceroute-001:security-considerations-001
+## SPEC-004-traceroute:security-considerations-001
 
 - Be aware that traceroute functionality may be used for network reconnaissance
 - Implement rate limiting to prevent abuse
@@ -125,7 +125,7 @@ const result = await networkTools.traceroute('192.168.1.1', {
 - Validate and sanitize all user inputs to prevent command injection when using child processes
 - Some networks may block traceroute probes as a security measure, so handle these cases gracefully
 
-## SPEC-dns-mcp-traceroute-001:differences-from-ping-001
+## SPEC-004-traceroute:differences-from-ping-001
 
 The traceroute tool differs from the ping tool in the following ways:
 

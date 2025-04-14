@@ -318,14 +318,14 @@ After the initial implementation, consider:
 
 ### 9.1 Documentation
 
-- [SPEC-dns-mcp-overview-001.md](./SPEC-dns-mcp-overview-001.md)
-- [SPEC-dns-mcp-fastmcp-integration-001.md](./SPEC-dns-mcp-fastmcp-integration-001.md)
-- [SPEC-dns-mcp-ns-lookup-001.md](./SPEC-dns-mcp-ns-lookup-001.md)
-- [SPEC-dns-mcp-whois-001.md](./SPEC-dns-mcp-whois-001.md)
-- [SPEC-dns-mcp-providers-001.md](./SPEC-dns-mcp-providers-001.md)
-- [SPEC-dns-mcp-domain-search-001.md](./SPEC-dns-mcp-domain-search-001.md)
-- [SPEC-dns-mcp-caching-001.md](./SPEC-dns-mcp-caching-001.md)
-- [SPEC-dns-mcp-future-001.md](./SPEC-dns-mcp-future-001.md)
+- [SPEC-000-index.md](./SPEC-000-index.md)
+- [SPEC-001-nslookup.md](./SPEC-001-nslookup.md)
+- [SPEC-001-nslookup.md](./SPEC-001-nslookup.md)
+- [SPEC-008-whois.md](./SPEC-008-whois.md)
+- [SPEC-009-ip-info.md](./SPEC-009-ip-info.md)
+- [SPEC-015-domain-availability.md](./SPEC-015-domain-availability.md)
+- [SPEC-000-index.md](./SPEC-000-index.md)
+- [SPEC-000-index.md](./SPEC-000-index.md)
 
 ### 9.2 External References
 

@@ -1,10 +1,10 @@
-# SPEC-dns-mcp-dig-001: DNS Dig Tool Specification
+# SPEC-002-dig: DNS Dig Tool Specification
 
-## SPEC-dns-mcp-dig-001:overview-001
+## SPEC-002-dig:overview-001
 
 The DNS Dig (Domain Information Groper) tool provides a more detailed DNS lookup functionality similar to the command-line dig utility. It offers comprehensive DNS query capabilities with formatted output and additional options compared to the basic nslookup tool. This specification outlines the implementation details, options, and usage of the dig feature within the MCPDNS Network Tools suite.
 
-## SPEC-dns-mcp-dig-001:requirements-001
+## SPEC-002-dig:requirements-001
 
 ### Functional Requirements
 
@@ -23,7 +23,7 @@ The DNS Dig (Domain Information Groper) tool provides a more detailed DNS lookup
 4. Must validate input parameters
 5. Should provide output similar to the standard dig command-line utility
 
-## SPEC-dns-mcp-dig-001:interface-001
+## SPEC-002-dig:interface-001
 
 ### Type Definitions
 
@@ -63,7 +63,7 @@ export interface DigOptions {
 dig(domain: string, options?: DigOptions): Promise<string>;
 ```
 
-## SPEC-dns-mcp-dig-001:behavior-001
+## SPEC-002-dig:behavior-001
 
 ### Input Validation
 
@@ -90,7 +90,7 @@ dig(domain: string, options?: DigOptions): Promise<string>;
 - Timeout errors should be clearly indicated
 - DNS server errors should be propagated with context
 
-## SPEC-dns-mcp-dig-001:examples-001
+## SPEC-002-dig:examples-001
 
 ### Basic Usage
 
@@ -120,7 +120,7 @@ const result = await networkTools.dig('example.com', {
 });
 ```
 
-## SPEC-dns-mcp-dig-001:implementation-notes-001
+## SPEC-002-dig:implementation-notes-001
 
 - The implementation should aim to provide output similar to the standard dig command-line utility
 - Consider using a DNS resolution library that supports detailed query information
@@ -131,7 +131,7 @@ const result = await networkTools.dig('example.com', {
 - Ensure proper logging of DNS query operations for debugging purposes
 - Consider implementing DNSSEC validation support
 
-## SPEC-dns-mcp-dig-001:differences-from-nslookup-001
+## SPEC-002-dig:differences-from-nslookup-001
 
 The dig tool differs from the nslookup tool in the following ways:
 

@@ -1,10 +1,10 @@
-# SPEC-dns-mcp-ping-001: Network Ping Tool Specification
+# SPEC-003-ping: Network Ping Tool Specification
 
-## SPEC-dns-mcp-ping-001:overview-001
+## SPEC-003-ping:overview-001
 
 The Network Ping tool provides functionality to test the reachability of a host on an Internet Protocol (IP) network and measure the round-trip time for messages sent from the originating host to a destination computer. This specification outlines the implementation details, options, and usage of the ping feature within the MCPDNS Network Tools suite.
 
-## SPEC-dns-mcp-ping-001:requirements-001
+## SPEC-003-ping:requirements-001
 
 ### Functional Requirements
 
@@ -23,7 +23,7 @@ The Network Ping tool provides functionality to test the reachability of a host 
 4. Must validate input parameters
 5. Should provide output similar to standard ping utilities
 
-## SPEC-dns-mcp-ping-001:interface-001
+## SPEC-003-ping:interface-001
 
 ### Type Definitions
 
@@ -42,7 +42,7 @@ export interface PingOptions {
 ping(host: string, options?: PingOptions): Promise<string>;
 ```
 
-## SPEC-dns-mcp-ping-001:behavior-001
+## SPEC-003-ping:behavior-001
 
 ### Input Validation
 
@@ -68,7 +68,7 @@ ping(host: string, options?: PingOptions): Promise<string>;
 - Timeout errors should be clearly indicated
 - Permission errors (e.g., when raw sockets require elevated privileges) should be handled
 
-## SPEC-dns-mcp-ping-001:examples-001
+## SPEC-003-ping:examples-001
 
 ### Basic Usage
 
@@ -98,7 +98,7 @@ const result = await networkTools.ping('192.168.1.1', {
 });
 ```
 
-## SPEC-dns-mcp-ping-001:implementation-notes-001
+## SPEC-003-ping:implementation-notes-001
 
 - The implementation should use platform-appropriate methods to send ICMP Echo Request packets
 - For cross-platform compatibility, consider using a ping library that works across different operating systems
@@ -113,7 +113,7 @@ const result = await networkTools.ping('192.168.1.1', {
 - Ensure proper error handling for various network conditions
 - Consider implementing a progress callback for long-running ping operations
 
-## SPEC-dns-mcp-ping-001:security-considerations-001
+## SPEC-003-ping:security-considerations-001
 
 - Be aware that ping functionality may be used for network scanning or denial-of-service attacks
 - Implement rate limiting to prevent abuse

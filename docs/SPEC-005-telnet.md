@@ -1,10 +1,10 @@
-# SPEC-dns-mcp-telnet-001: Network Telnet Tool Specification
+# SPEC-005-telnet: Network Telnet Tool Specification
 
-## SPEC-dns-mcp-telnet-001:overview-001
+## SPEC-005-telnet:overview-001
 
 The Network Telnet tool provides functionality to test TCP connectivity to a specific host and port. Unlike traditional telnet which provides an interactive terminal session, this tool simply verifies if a connection can be established to the specified port on the target host. This specification outlines the implementation details, options, and usage of the telnet feature within the MCPDNS Network Tools suite.
 
-## SPEC-dns-mcp-telnet-001:requirements-001
+## SPEC-005-telnet:requirements-001
 
 ### Functional Requirements
 
@@ -20,7 +20,7 @@ The Network Telnet tool provides functionality to test TCP connectivity to a spe
 4. Must validate input parameters
 5. Should not establish a full telnet session, only test connectivity
 
-## SPEC-dns-mcp-telnet-001:interface-001
+## SPEC-005-telnet:interface-001
 
 ### Type Definitions
 
@@ -38,7 +38,7 @@ export interface TelnetOptions {
 telnet(host: string, options: TelnetOptions): Promise<boolean>;
 ```
 
-## SPEC-dns-mcp-telnet-001:behavior-001
+## SPEC-005-telnet:behavior-001
 
 ### Input Validation
 
@@ -63,7 +63,7 @@ telnet(host: string, options: TelnetOptions): Promise<boolean>;
 - Connection timeouts should result in a `false` return value
 - Other unexpected errors should be propagated with context
 
-## SPEC-dns-mcp-telnet-001:examples-001
+## SPEC-005-telnet:examples-001
 
 ### Basic Usage
 
@@ -98,7 +98,7 @@ try {
 }
 ```
 
-## SPEC-dns-mcp-telnet-001:implementation-notes-001
+## SPEC-005-telnet:implementation-notes-001
 
 - The implementation should use standard TCP socket connections
 - For cross-platform compatibility, use a networking library that works across different operating systems
@@ -108,7 +108,7 @@ try {
 - Ensure proper error handling for various network conditions
 - Use appropriate logging for debugging connection issues
 
-## SPEC-dns-mcp-telnet-001:security-considerations-001
+## SPEC-005-telnet:security-considerations-001
 
 - Be aware that port scanning functionality may be used for network reconnaissance
 - Implement rate limiting to prevent abuse
@@ -118,7 +118,7 @@ try {
 - Consider restricting the range of ports that can be tested
 - Do not store or log sensitive connection information
 
-## SPEC-dns-mcp-telnet-001:common-use-cases-001
+## SPEC-005-telnet:common-use-cases-001
 
 The telnet tool is commonly used for:
 
@@ -129,7 +129,7 @@ The telnet tool is commonly used for:
 5. Validating network configurations
 6. Pre-flight checks before attempting to use a service
 
-## SPEC-dns-mcp-telnet-001:limitations-001
+## SPEC-005-telnet:limitations-001
 
 - This tool only tests TCP connectivity and does not support UDP
 - It does not provide any information about the service running on the port
