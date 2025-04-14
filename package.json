@@ -1,0 +1,43 @@
+{
+  "name": "mcpdns",
+  "version": "1.0.0",
+  "description": "`mcpdns` is a specialized Model Context Protocol (MCP) server designed to streamline DNS configuration and domain verification tasks directly within your Integrated Development Environment (IDE). Built using the `fastmcp` framework, it provides a suite of tools to help developers, DevOps engineers, and system administrators quickly diagnose and confirm domain setups without constant context switching.",
+  "main": "dist/index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc -w & node --watch dist/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint 'src/**/*.ts'",
+    "lint:fix": "eslint 'src/**/*.ts' --fix",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewhopper/mcpdns.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewhopper/mcpdns/issues"
+  },
+  "homepage": "https://github.com/andrewhopper/mcpdns#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.14.1",
+    "@typescript-eslint/eslint-plugin": "^8.29.1",
+    "@typescript-eslint/parser": "^8.29.1",
+    "eslint": "^9.24.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.1",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "fastmcp": "^1.21.0"
+  }
+}
