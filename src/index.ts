@@ -6,17 +6,22 @@ async function main() {
     // Initialize the FastMCP server
     const mcpServer = new FastMCP({
       name: 'mcpdns',
-      description: 'DNS & Domain Troubleshooting MCP Server',
-      version: '1.0.0',
-      port: process.env.PORT ? parseInt(process.env.PORT) : 3000
+      version: '1.0.0'
     });
 
     // Register MCP tools
     registerTools(mcpServer);
 
     // Start the server
-    await mcpServer.start();
-    console.log(`MCP Server started on port ${mcpServer.port}`);
+    const port = process.env.PORT ? parseInt(process.env.PORT) : 3000;
+    await mcpServer.start({
+      transportType: "sse",
+      sse: {
+        endpoint: "/mcp",
+        port: port
+      }
+    });
+    console.log(`MCP Server started on port ${port}`);
   } catch (error) {
     console.error('Failed to start MCP server:', error);
     process.exit(1);
