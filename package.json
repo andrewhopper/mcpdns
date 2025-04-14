@@ -38,6 +38,17 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "fastmcp": "^1.21.0"
+    "@vscode/webview-ui-toolkit": "^1.4.0",
+    "axios": "^1.8.4",
+    "cheerio": "^1.0.0",
+    "dns-packet": "^5.6.1",
+    "dns-socket": "^4.2.2",
+    "dnsjs": "^0.1.1",
+    "fastmcp": "^1.21.0",
+    "lighthouse": "^12.5.1",
+    "node-fetch": "^2.7.0",
+    "puppeteer": "^24.6.1",
+    "whois": "^2.14.2",
+    "ws": "^8.18.1"
   }
 }

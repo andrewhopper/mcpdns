@@ -1,4 +1,4 @@
 # Client Support Requirements
 
 ## Supported Platforms
-- CLI
+- Web Browser

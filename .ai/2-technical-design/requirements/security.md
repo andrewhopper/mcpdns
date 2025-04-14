@@ -4,3 +4,5 @@
 Medium
 
 ## Required Security Features
+- Input Validation
+- Session Management

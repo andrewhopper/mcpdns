@@ -1,6 +1,6 @@
 ---
 id: CTX-project-conventions-001
-created: 2025-04-12
+created: 2025-04-14
 ---
 
 # Project Conventions <!-- SPEC-001 -->

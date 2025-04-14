@@ -1,6 +1,6 @@
 ---
 id: DEV-folder-locks-001
-created: 2025-04-12
+created: 2025-04-14
 ---
 
 # Folder Locking Strategy <!-- SPEC-001 -->

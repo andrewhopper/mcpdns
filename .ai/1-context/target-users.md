@@ -1,8 +1,7 @@
 # Target Users
 
 ## User Description
-Tech Devs
+devs
 
 ## User Personas
-- developers
-- indie hackers
+- AI native developers

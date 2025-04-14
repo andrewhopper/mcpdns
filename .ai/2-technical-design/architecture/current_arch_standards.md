@@ -2,6 +2,6 @@
 
 ## Architectural Patterns
 - MVC
+- Event-Driven
 
 ## Design Patterns
-- Dependency Injection

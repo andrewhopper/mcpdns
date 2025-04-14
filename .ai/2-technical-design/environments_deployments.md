@@ -3,7 +3,8 @@
 ## Environments
 - Development
 - Staging
+- QA
 - Production
 
 ## Environment Details
-Local MCP
+Dev: local setup, Staging: cloud-based, Prod: high-availability

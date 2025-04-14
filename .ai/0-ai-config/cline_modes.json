@@ -1,13 +1,15 @@
 {
-  "projectName": "mcpdns",
+  "projectName": "mcpdns-net-tools",
   "architecture": [
-    "MVC"
+    "MVC",
+    "Event-Driven"
   ],
-  "designPatterns": [
-    "Dependency Injection"
-  ],
+  "designPatterns": [],
   "securityLevel": "Medium",
-  "securityFeatures": [],
+  "securityFeatures": [
+    "Input Validation",
+    "Session Management"
+  ],
   "performance": {
     "scalability": "Medium (1000-10000 users)",
     "responseTime": "200ms"
@@ -15,9 +17,10 @@
   "environments": [
     "Development",
     "Staging",
+    "QA",
     "Production"
   ],
-  "environmentDetails": "Local MCP",
+  "environmentDetails": "Dev: local setup, Staging: cloud-based, Prod: high-availability",
   "guidelines": [
     "Reference file IDs in documentation and code comments",
     "Check folder-locks.md before modifying locked directories",

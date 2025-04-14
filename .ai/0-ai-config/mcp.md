@@ -1,6 +1,6 @@
 ---
 id: CFG-mcp-001
-created: 2025-04-12
+created: 2025-04-14
 ---
 
 # Model Context Protocol Configuration <!-- SPEC-001 -->

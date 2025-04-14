@@ -1,6 +1,6 @@
 ---
 id: ARCH-system-architecture-001
-created: 2025-04-12
+created: 2025-04-14
 ---
 
 # System Architecture <!-- SPEC-001 -->

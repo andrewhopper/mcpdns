@@ -1,6 +1,6 @@
 ---
 id: PRD-[feature-name]-001
-created: 2025-04-12
+created: 2025-04-14
 authors:
   - name: "[Author Name]"
     email: "[email@example.com]"

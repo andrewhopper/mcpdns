@@ -93,7 +93,7 @@ export interface DomainHackResult {
 export interface DomainSearchStats {
   totalResults: number;
   availableResults: number;
-  unavailableResults: number;
+  unavableResults: number;
   notChecked: number;
 }
 
@@ -123,3 +123,6 @@ export interface DomainHackResponse {
   results: DomainHackResult[];
   stats: DomainSearchStats;
 }
+
+// Export all network tools types
+export * from './network-tools';

@@ -1,9 +1,9 @@
 ---
 id: CTX-project-context-001
-created: 2025-04-12
+created: 2025-04-14
 ---
 
-# Project Context Document ## 1. Project Overview - **Project Name**: mcpdns
+# Project Context Document ## 1. Project Overview - **Project Name**: mcpdns-net-tools
 - **Domain**: [Specify domain]
 - **Core Purpose**: [Describe the core purpose]
 - **Project Type**: [quick prototype | semi-production code | full production code]
